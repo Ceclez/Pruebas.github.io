@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas Animadas</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: arial;
+        }
+        header{
+            height: 160px;
+            background-color: #333;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            padding: 30px 0 15px 0;
+            font-size: 40px;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+            padding: 15px;
+            font-size: 16px;
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover{
+            text-shadow: 0 0 5px lightgray;
+            box-shadow: 0 0 5px lightgray;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px 40px;
+            padding: 50px 0;
+        }
+        div{
+            height: auto;
+            padding: 30px;
+            border: 1px solid lightgray;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            padding-bottom: 30px;
+        }
+        p, h3{
+            padding-bottom: 10px;
+        }
+        footer{
+            color: white;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+        }
+        @media (max-width:321px){
+            header{
+                height: 130px;
+            }
+            h1{
+                font-size: 30px;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 1fr;
+                padding: 20px 0 20px 0;
+            }
+            div{
+            padding: 10px;
+            }
+            img{
+                height: auto;
+            }
+        }
+        @media (max-width:426px){
+            header{
+                height: 145px;
+            }
+            h1{
+                font-size: 30px;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 100%;
+                padding: 20px 0 20px 0;
+            }
+            div{
+            padding: 20px;
+            }
+            img{
+                height: auto;
+            }
+        }
+        @media (max-width:769px){
+            .container{
+                width: 90%;
+            }
+            img{
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Películas Animadas</h1>
+        <button>Menú</button>
+    </header>
+    <main class="container">
+        <div class="card-one">
+            <img src="https://th.bing.com/th/id/R.66b87ed6a638c8e95294fbfcefb7dade?rik=rQh7x373c3xTZg&pid=ImgRaw&r=0" alt="monsters-inc">
+            <h3>Película 1</h3>
+            <p>Descripción del producto 1</p>
+            <p>$19.99</p>
+            <a href="#">Comprar</a>
+        </div>
+
+        <div class="card-two">
+            <img src="https://th.bing.com/th/id/R.66b87ed6a638c8e95294fbfcefb7dade?rik=rQh7x373c3xTZg&pid=ImgRaw&r=0" alt="monsters-inc">
+            <h3>Película 2</h3>
+            <p>Descripción del producto 2</p>
+            <p>$89.99</p>
+            <a href="#">Comprar</a>
+        </div>
+
+        <div class="card-three">
+            <img src="https://th.bing.com/th/id/R.66b87ed6a638c8e95294fbfcefb7dade?rik=rQh7x373c3xTZg&pid=ImgRaw&r=0" alt="monsters-inc">
+            <h3>Película 3</h3>
+            <p>Descripción del producto 3</p>
+            <p>$45.01</p>
+            <a href="#">Comprar</a>
+        </div>
+
+        <div class="card-four">
+            <img src="https://th.bing.com/th/id/R.66b87ed6a638c8e95294fbfcefb7dade?rik=rQh7x373c3xTZg&pid=ImgRaw&r=0" alt="monsters-inc">
+            <h3>Película 4</h3>
+            <p>Descripción del producto 4</p>
+            <p>$59.99</p>
+            <a href="#">Comprar</a>
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 Películas Animadas S.A de C.V.
+    </footer>
+</body>
+</html>

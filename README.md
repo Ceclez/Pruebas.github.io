@@ -1,3 +1,3 @@
 ----READ----
 
-HTML n' CSS practices...
+HTML, CSS n' JavaScript practices.
